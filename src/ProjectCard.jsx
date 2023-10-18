@@ -12,7 +12,7 @@ const ProjectCard = (props) => {
   } = props.data;
 
   return (
-    <div className="project-card">
+    <div className="project-card" onClick={props.onClick}>
       <h2>{ProjectTitle}</h2>
       <p>Technologies: {ProjectTechnologies}</p>
       <p>Frontend: {FrontendSkills}</p>
